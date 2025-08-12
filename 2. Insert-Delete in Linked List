@@ -1,0 +1,18 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    list<int> l = {10, 20, 30};
+
+    
+    auto it = find(l.begin(), l.end(), 20);
+    if(it != l.end()) l.insert(it, 15);
+
+
+    l.remove(30);
+
+    for(int x : l) cout << x << " ";  
+    cout << "\n";
+
+    return 0;
+}
